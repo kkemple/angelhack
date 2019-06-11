@@ -1,0 +1,8 @@
+{
+	"auth": {
+		"angelhack3fdd1055": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

@@ -1,0 +1,68 @@
+{
+    "identityPoolName": "angelhack3fdd1055_identitypool_3fdd1055",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "angelh_3fdd1055_lambda_log_policy",
+    "openIdLambdaRoleName": "angelh_3fdd1055_openid_lambda_role",
+    "openIdRolePolicy": "angelh_3fdd1055_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "angelh_3fdd1055_openid_lambda_iam_policy",
+    "openIdLogPolicy": "angelh_3fdd1055_openid_lambda_log_policy",
+    "userPoolName": "angelhack3fdd1055_userpool_3fdd1055",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "angelh3fdd1055_sns-role",
+    "roleExternalId": "angelh3fdd1055_role_external_id",
+    "policyName": "angelh3fdd1055-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "angelh3fdd1055_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "angelh3fdd1055_totp_lambda_role",
+    "mfaLambdaLogPolicy": "angelh3fdd1055_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "angelh3fdd1055_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "angelh3fdd1055_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "angelh3fdd1055_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "angelh3fdd1055_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "angelh3fdd1055_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "angelhack3fdd1055",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default"
+}
